@@ -240,7 +240,7 @@ invertWord('Mariposas')
 const newArray= array=>{
   let even=[]
   let odd=[]
-  for(let i=0;i<=array.length;i++){
+  for(let i=0;i<array.length;i++){
     let number=array[i]
     let randomNumber= Math.floor(Math.random()*10) + 1;
     let result= number *randomNumber;
@@ -261,7 +261,7 @@ const fiveWords= array=>{
   for(let i=0;i<array.length;i++){
     let word=array[i];
     let firstLetter=word.charAt(0).toUpperCase();
-    let finalLetter= word.charAt(array.length-1).toUpperCase();
+    let finalLetter= word.charAt(word.length-1).toUpperCase();
     newArray.push(firstLetter,finalLetter);
   }
   console.log(newArray)
