@@ -125,7 +125,7 @@ twoArrays();
 //- Crea una función que reciba un número y te diga si es primo o no. Un número primo es aquel que sólo puede dividirse por si mismo.
 
 const isPrime = (number) => {
-  if (number <= 1 || number % 2 === 0) {
+  if ((number < 2 && number !== 2) || number % 2 === 0) {
     console.log(`El número ${number} no es primo`);
     return;
   }
